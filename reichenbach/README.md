@@ -46,6 +46,70 @@ Deduction: Compute the odds as if spotting Moriarty’s bluff.
  
 ### 4. Solution
 
+### 5. The Binary Telegram of Baskerville
+A telegraph sends M 0’s and N 1’s in random order. What’s the chance the first r bits hold exactly k 1’s, as if decoding a hound’s howl?
+Deduction: Reason through the static as if time is running out.
+
+### 5. Solution
+
+### 6. The Menagerie of Moriarty
+Holmes uncovers Professor Moriarty’s scheme to display 3 bird species and 3 reptile species, selected from 8 birds and 6 reptiles, in a sinister zoo:
+- a. If Moriarty chooses freely, how many exhibits can he craft?
+- b. Two birds—one a hawk with a piercing cry, the other a raven with a deadly glare—cannot coexist without chaos. How many exhibits avoid this peril?
+- c. A venomous parrot and a cobra, when paired, unleash a toxic fog. How many exhibits dodge this trap?
+Deduction: Justify your counts as if tracing Moriarty’s twisted logic.
+
+### 6. Solution
+
+### 7. The Investments of Baker Street
+Holmes secures £20 million to fund 4 shadowy enterprises, investing in £1 million units, each with a minimum stake: £1M, £2M, £3M, £4M.
+- a. If all 4 must be funded to foil Moriarty’s network, how many strategies exist?
+- b. If at least 3 must be backed (to keep the web intact), how many plans work?
+Deduction: Argue your totals as if pitching to a wary Watson.
+
+### 7. Solution
+
+### 8. The Coding Conundrum of Scotland Yard
+Holmes probes a cryptography school where 100 agents study 3 courses—Java, C++, Python—under Lestrade’s watch:
+Java: 27 agents; C++: 28; Python: 20.
+12 crack Java and C++; 5 master Java and Python; 8 excel in C++ and Python.
+2 prodigies conquer all three.
+- a. What’s the chance a random agent has evaded all courses, lurking in the shadows?
+- b. What’s the chance an agent studies exactly one, avoiding the others’ scrutiny?
+- c. If two agents are nabbed, what’s the odds at least one knows a course? Give a final number.
+Deduction: Map the overlaps as if decoding a Yard cipher—explain each step.
+
+### 8. Solution
+
+### 9. The Passwords of the Naval Treaty
+A spy tackles n distinct passwords, one unlocking a treaty:
+- a. Trying randomly and discarding failures, what’s the chance the k-th attempt succeeds?
+- b. Trying randomly without discarding, stopping at success, what’s the chance the k-th try wins?
+Deduction: Think like the spy—explain as if Holmes is one step ahead.
+
+### 9. Solution
+
+### 10. The Dice of the Speckled Band
+Holmes rolls a six-sided die six times to crack a gypsy code:
+- a. What’s the chance two numbers appear thrice each (e.g., three 4s, three 6s)?
+- b. What’s the chance exactly one number hits thrice, no more, no less?
+Deduction: Interpret the rolls as if they spell a fatal clue—mind the overlaps.
+
+### 10. Solution
+
+### 11. The Letters of the Red-Headed League
+Holmes dispatches 20 distinct letters to 12 unique informants, each landing randomly. What’s the chance 4 get exactly 2 letters and 3 get exactly 4, the rest empty-handed?
+Deduction: Trace the mail as if thwarting a league plot.
+
+### 11. Solution
+
+### 12. The Buckets of Bohemia
+m clues are hashed into N buckets by a rogue algorithm, all N^m outcomes equal. What’s the chance exactly k land in the first bucket?
+Deduction: Model the scatter as if piecing together a broken photograph.
+
+
+### 12. SOlution
+
 
 
 
