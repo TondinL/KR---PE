@@ -100,6 +100,9 @@ Deduction: Map the overlaps as if decoding a Yard cipher—explain each step.
 
 ### 8. Solution
 
+- a. We can resolve this using the inclusion exclusion principle. To find the agents that study at least one course we can add the 27 agents form group Java, the 28 from the c++ group and the 20 from python. We need to remove the parts that are double counted, given by the intersections "12 crack Java and C++; 5 master Java and Python; 8 excel in C++ and Python.". The central intersection is completely removed in this way so we need to add it back, the " 2 prodigies conquer all three ". so the canche that a random agents evaded all courses is given by <br> 100 - (27 + 28 + 20 - 12 - 5 - 8 + 2) = 48. Dividing by 100 we obtain the probability <br> P = 0.48.
+- b. for calculating the agents that study only one from Java, C++ and Python we need to subtract the intersections between two or three groups: <br> Java = 27−(12+5−2)=12 (-2 becouse it is counted twice) <br> C++ : 28−(12+8−2)=10 <br> Python : 20−(5+8−2)=9 <br> (100- (12 + 10 + 9))/100 = 0.31
+
 ### 9. The Passwords of the Naval Treaty
 A spy tackles n distinct passwords, one unlocking a treaty:
 - a. Trying randomly and discarding failures, what’s the chance the k-th attempt succeeds?
@@ -143,4 +146,4 @@ The probability for a clue to be hashed to the first bucket is 1/N, so the proba
 
 <img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/es_12.JPG" width="400"/>
 
-### Additional Comments:
+
