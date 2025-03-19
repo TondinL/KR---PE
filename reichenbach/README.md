@@ -54,7 +54,7 @@ Deduction: Reason through the static as if time is running out.
 ### 5. Solution
 
 Given the problem, we have N + M total symbols, M 0's and N 1's. The probability of a symbol beeing a 1 can be otained by dividing the number of 1's by the total number of symbols <br> N / (N + M) <br> same for the 0's: <br> M/ (N + M) <br> We are trying to compute the probability of having k 1's in the firts r bits and k-r 0's. Each bit can be a 0 or a 1 with the probability given above. So the probability of having k 1's is (N / (N + M))^k and r-k 0's is (M / (N * M))^(r-k). We also need to consider al the possible different arrangement of 0's and 1's in the first r bits. This can be done using the formula (r choose k). the final formula is: <br>
-
+![solution](https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/es_5.jpg)
 
 ### 6. The Menagerie of Moriarty
 Holmes uncovers Professor Moriarty’s scheme to display 3 bird species and 3 reptile species, selected from 8 birds and 6 reptiles, in a sinister zoo:
