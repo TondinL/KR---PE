@@ -107,6 +107,7 @@ Deduction: Think like the spy—explain as if Holmes is one step ahead.
 ### 9. Solution
 
 - a. We need to select one among the wrong password (n - 1) out of n, with at each step reducing by one becouse we are discarding failures. so the chance that the k-th attempt succeds is given by: <br> ![9.a](https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/es_9a.JPG) <br> Where 1/(n-k+1) is the probability of selecting the right password at the k-th attempt. We can notice that the fractions simplify each other in to 1/n.
+- b. Without discarding, with the possibility of trying the same password multiple times, for each of the k-1 steps the probability of not choosing the correct password is (n-1)/n and the probablilty of choosing the correct at each step (also at the k-th one) is 1/n. <br> So the chances that the k-th try wins are given by (n-1)/n)^(k-1)*1/n .
 
 ### 10. The Dice of the Speckled Band
 Holmes rolls a six-sided die six times to crack a gypsy code:
