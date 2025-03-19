@@ -31,7 +31,7 @@ Deduction: Track its steps as if hunting it across the moors.
 
 ### 3. Solution
 
-[m = 5 , n = 4](reichenbach/Images/photo_2025-03-19_12-34-06.jpg)
+[m = 5 , n = 4](https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/photo_2025-03-19_12-34-06.jpg)
 - a. deve fare per forza (n-1) passi a destra e (m-1) passi verso il basso. ora bisogna solo trovare tutte le combinazioni di essi, quindi tutti i percorsi possibili. Il totale di passi da eseguire sarà (n-1) + (m-1) = n + m - 2 . Se consideriamo ogni passo come elemento distinto ci sarebbero (n + m - 2) combinazioni possibili, ma i passi verso destra e verso il basso sono indistinguibili, quindi bisogna dividere per le ripetizioni : (n + m - 2)! / (n - 1)! * (m - 1)! , che è la stessa formula che si ottiene considerando il coefficiente binomiale ( ( n + m - 2) (n - 1) ) = ( ( n + m - 2) (m - 1) )
 - b. il vincolo può essere interpretato come se il cosetto partisse dalla cella (1,2) e ragionare allo stesso modo di prima con (n - 2) passi a dx e (m - 1) passi verso il basso. ....
 - c.
