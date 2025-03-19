@@ -128,6 +128,8 @@ Deduction: Trace the mail as if thwarting a league plot.
 
 We will start computing all the way we can choose the 3 distinct groups from the 12 informants, the group of 4 with 2 letters, the group of 3 with 4 and the 5 with none. Considering each informant of the group as indistinguable becouse they belong to the same group, there are 12!/(5! * 4! * 3!) differents splits of the 12 informants in this 3 groups. We now need to artition 20 letters into groups of sizes 2, 2, 2, 2, 4, 4, 4 , and this is given by 20!/((2!)^4 * (4!)^3). We will divide by the total different possible partition of the 20 letters, given by 12^20. The final formula is: <br>
 ![11_a](https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/es_11.jpg)
+<img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/es_11.jpg" width="300"/>
+
 
 ### 12. The Buckets of Bohemia
 m clues are hashed into N buckets by a rogue algorithm, all N^m outcomes equal. What’s the chance exactly k land in the first bucket?
