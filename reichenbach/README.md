@@ -11,16 +11,16 @@ Deduction: Explain your reasoning as if briefing Watson on the club’s hidden h
 
 ### 1. Solution
 
-- a.  There are 10 different options for the first seat, 9 for the second, 8 for the third, and so on until the last seat where there is only one option left. The solution is given by the permutation rule of n (n = 10) distinct objects <br> 10! = 10 * 9 * 8 * ... * 1
-- b. We can consider Mycroft Holmes and his aide as a single element, in this way we can reason as for point a, and we obtain 9! . For each of this distinct arrangements, we need to consider the case where Mycroft Holmes sits on the right and his aide on the left and vice versa, so we need to multiply the obtained result by a factor of 2: <br> 2 * (9!)
-- c. The only way to meet the given constraint is to have the two groups sit alternately. Now for each distinct group we have 5! different arrangements <br> 5! * 5! ( We multiply becouse for each arrangement of group 1 we have 5! different arrangements of group 2) <br> We have to consider now the case where we start with an element of group 1 or group 2, so we need to multiply the obtained result by a factor of 2 <br> 2 * (5! * 5!)
-- d. We can reason as for point b and consider each pair as a single element, in this way we obtain 5! different arrangements. Now we need to calculate all the ways in which the elements of the pair can interchange with each other to form a distinct arrangment, and this is given by 2! , this for each of the 5 pairs, so we multiply 2! five times, and the final result is given by: <br> (2!)^5 * 5!
+- a.  There are 10 different options for the first seat, 9 for the second, 8 for the third, and so on until the last seat where there is only one option left. The solution is given by the permutation rule of n (n = 10) distinct objects <br> 10! = 10 * 9 * 8 * ... * 1 = 3628800
+- b. We can consider Mycroft Holmes and his aide as a single element, in this way we can reason as for point a, and we obtain 9! . For each of this distinct arrangements, we need to consider the case where Mycroft Holmes sits on the right and his aide on the left and vice versa, so we need to multiply the obtained result by a factor of 2: <br> 2 * (9!) = 725760
+- c. The only way to meet the given constraint is to have the two groups sit alternately. Now for each distinct group we have 5! different arrangements <br> 5! * 5! ( We multiply becouse for each arrangement of group 1 we have 5! different arrangements of group 2) <br> We have to consider now the case where we start with an element of group 1 or group 2, so we need to multiply the obtained result by a factor of 2 <br> 2 * (5! * 5!) = 28800
+- d. We can reason as for point b and consider each pair as a single element, in this way we obtain 5! different arrangements. Now we need to calculate all the ways in which the elements of the pair can interchange with each other to form a distinct arrangment, and this is given by 2! , this for each of the 5 pairs, so we multiply 2! five times, and the final result is given by: <br> (2!)^5 * 5! = 3840
 
 ### 2. The Cipher Arrays of Irene Adler
 Irene Adler hides messages in sorted arrays of k distinct integers, each from 1 to n (e.g., 1 ≤ x[0] < x[1] < … < x[k-1] ≤ n). How many such arrays can she devise, as if concealing clues in a locked box?
 
 ### 2. Solution
-coefficiente binomiale (n , k) -> come ricavarlo? come arrivare ad esso ? (aka perché)
+We can consider the permutations of all n integers, then select the first k, and divide the result for the permutation of the k selected integers and the (n - k) unselected integers, this becouse we do not care about the order of them. This gives us <br> n! / ((k! * (n - k)!) <br> this is the combinations formula of ( n choose k )
 
 ### 3. The Paths of the Hound
 A mechanical hound roams an n × m grid from (1,1) to (n,m), moving only right or down:
