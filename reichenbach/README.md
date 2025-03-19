@@ -36,7 +36,7 @@ Deduction: Track its steps as if hunting it across the moors.
 - a. As it can be seen from the above image, starting from the (1,1) cell , given the constraints, the mechanical hound is required to take  (n - 1) steps on the right (Rs) and (m -1) steps downward (Ds) to get to the (n,m) cell of the grid. So a total of (n + m -2) steps will be required for each possible trail, from which we need to understand where to put the Right steps and the downward ones. We can obtain the final result of all the possible trails by considering all the steps as distinct, taking the permutation of them and then dividing by the repetitions (Ds and Rs) <br> (n + m - 2)! / ((n - 1)! * (m - 1)!) <br> this is the same as ((n + m - 2) choose (n - 1)) = ((n + m - 2) choose (m -1)) <br> for the example given above of n = 5 and m = 4 , this gives us 35 different tails.
 - b. Given that the first step must always be on the rigt, We can intepret the constraint as if the hound starts from the (1,2) cell, and count the possible trails from there. In this way, reasoning as in point a, there will be needed (n - 2) steps on the right and (m - 1) steps downwards, with a total of (n + m - 3) steps. <br> the solution in given by the formula ((n + m - 3) choose (n - 2)) = ((n + m - 3) choose (m - 1)) ) <br> for the example given above of n = 5 and m = 4 , this gives us 20 different tails.
 - c. 
-![](https://raw.githubusercontent.com/TondinL/KR---PE/blob/main/reichenbach/Images/es_3c.jpg)
+![solution](https://raw.githubusercontent.com/TondinL/KR---PE/blob/main/reichenbach/Images/es_3c.jpg)
 
 ### 4. The Poker Game at Reichenbach
 Holmes faces Moriarty at a poker table, where all 5-card hands from a 52-card deck are equally likely:
