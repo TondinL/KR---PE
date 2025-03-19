@@ -117,6 +117,9 @@ Deduction: Interpret the rolls as if they spell a fatal clue—mind the overlaps
 
 ### 10. Solution
 
+- a. For the first we have 6/6 options. The second and the third die needs to be the same value of the first one, so 1/6 * 1/6. For choosing the fourth one, the first of the second triad, we have 5/6 options, becouse in need to be different from the first triad. The fifth and the sixth also can be 1/6 numbers. <br> We have (1/6) * (1/6) * (5/6) * (1/6) * (1/6), we also need to multiply for (6!/(3!*3!)) to consider all the different orders of rolls and to divide for 2!, becouse we are overcounting the cases where we get for example 3 as the number of the first triad and for example 4 as the number of the second one, and vice versa. <br> The final probability is given by 0.0064. 
+- b. For this point we will compute the probability with the frequentist approach. We have 6 different options for the triad and (6 choose 3) different arrangement of position for the rolls to give the triad number. For choosing the remaining three number we split in two cases, one where whe have three distinct numbers and one where we have a couple and a distinct number (both from the couple and from the triad). For the first case we have 5 options for the first, 4 for the second and 3 for the third, all divided for 3! (different arrangements), for the second case we have 5 different options for the number of the couple, and (3 choose 2) ways to arrange it in the remaining three positions. For the last number we have 4 options. The total number of possibile outcomes is given by 6^6. <br> the chanche of having a number hit exaclty thrice is 0.051.
+
 ### 11. The Letters of the Red-Headed League
 Holmes dispatches 20 distinct letters to 12 unique informants, each landing randomly. What’s the chance 4 get exactly 2 letters and 3 get exactly 4, the rest empty-handed?
 Deduction: Trace the mail as if thwarting a league plot.
@@ -126,7 +129,6 @@ Deduction: Trace the mail as if thwarting a league plot.
 ### 12. The Buckets of Bohemia
 m clues are hashed into N buckets by a rogue algorithm, all N^m outcomes equal. What’s the chance exactly k land in the first bucket?
 Deduction: Model the scatter as if piecing together a broken photograph.
-
 
 ### 12. Solution
 
