@@ -31,12 +31,14 @@ Deduction: Track its steps as if hunting it across the moors.
 
 ### 3. Solution
 
-![m = 5 , n = 4](https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/photo_2025-03-19_12-34-06.jpg)
+ <img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/photo_2025-03-19_12-34-06.jpg" width="400"/>
+
 <br> this is an example with n = 5 and m = 4
 - a. As it can be seen from the above image, starting from the (1,1) cell , given the constraints, the mechanical hound is required to take  (n - 1) steps on the right (Rs) and (m -1) steps downward (Ds) to get to the (n,m) cell of the grid. So a total of (n + m -2) steps will be required for each possible trail, from which we need to understand where to put the Right steps and the downward ones. We can obtain the final result of all the possible trails by considering all the steps as distinct, taking the permutation of them and then dividing by the repetitions (Ds and Rs) <br> (n + m - 2)! / ((n - 1)! * (m - 1)!) <br> this is the same as ((n + m - 2) choose (n - 1)) = ((n + m - 2) choose (m -1)) <br> for the example given above of n = 5 and m = 4 , this gives us 35 different tails.
 - b. Given that the first step must always be on the rigt, We can intepret the constraint as if the hound starts from the (1,2) cell, and count the possible trails from there. In this way, reasoning as in point a, there will be needed (n - 2) steps on the right and (m - 1) steps downwards, with a total of (n + m - 3) steps. <br> the solution in given by the formula ((n + m - 3) choose (n - 2)) = ((n + m - 3) choose (m - 1))  <br> for the example given above of n = 5 and m = 4 , this gives us 20 different tails.
 - c. Given that we can change direction exactly three times, we can have trails in the form of Rs...|Ds...|Rs...|Ds... or Ds...|Rs...|Ds...|Rs... where Rs... and Ds... are groups of steps in the same direction, each >= 1, and | indicates the direction switch. To resolve this problem we can consider changes of direction ("|") as additional elememnts to the steps, so we will have (n + m - 1) total steps and 3 change-of-direction elements, with a total of (n + m + 1). We need to calculate where to put the change-of-direction elements and this can be done by the combination formula ((n + m + 1) choose 3) that will give us 3 distinct positions for the change of direction. We need to subtraact the illegal trails, where we have change of direction in the form of  Ds...|Rs...||Ds.. (a) or  Ds...|||Rs... (b) . This can be done considering the three ||| consecutive change of directions as a single element instead of three distinct elements and the two ||...| consecutive change of directions as two elements instead of three. We also need to multiply all for a factoer of two, considering the fact we start with a Rs step or a Ds step :
-![solution](https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/es_3cc.jpg)
+ <img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/es_3cc.jpg" width="400"/>
+
 
 ### 4. The Poker Game at Reichenbach
 Holmes faces Moriarty at a poker table, where all 5-card hands from a 52-card deck are equally likely:
@@ -60,7 +62,7 @@ Deduction: Reason through the static as if time is running out.
 ### 5. Solution
 
 Given the problem, we have N + M total symbols, M 0's and N 1's. The probability of a symbol beeing a 1 can be otained by dividing the number of 1's by the total number of symbols <br> N / (N + M) <br> same for the 0's: <br> M/ (N + M) <br> We are trying to compute the probability of having k 1's in the firts r bits and k-r 0's. Each bit can be a 0 or a 1 with the probability given above. So the probability of having k 1's is (N / (N + M))^k and r-k 0's is (M / (N * M))^(r-k). We also need to consider al the possible different arrangement of 0's and 1's in the first r bits. This can be done using the formula (r choose k). the final formula is: <br>
-![solution](https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/es_5.jpg)
+ <img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/es_5.jpg" width="400"/>
 
 ### 6. The Menagerie of Moriarty
 Holmes uncovers Professor Moriarty’s scheme to display 3 bird species and 3 reptile species, selected from 8 birds and 6 reptiles, in a sinister zoo:
@@ -106,7 +108,7 @@ Deduction: Think like the spy—explain as if Holmes is one step ahead.
 
 ### 9. Solution
 
-- a. We need to select one among the wrong password (n - 1) out of n, with at each step reducing by one becouse we are discarding failures. so the chance that the k-th attempt succeds is given by: <br> ![9.a](https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/es_9a.JPG) <br> Where 1/(n-k+1) is the probability of selecting the right password at the k-th attempt. We can notice that the fractions simplify each other in to 1/n.
+- a. We need to select one among the wrong password (n - 1) out of n, with at each step reducing by one becouse we are discarding failures. so the chance that the k-th attempt succeds is given by: <br> <img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/es_9a.JPG" width="400"/> <br> Where 1/(n-k+1) is the probability of selecting the right password at the k-th attempt. We can notice that the fractions simplify each other in to 1/n.
 - b. Without discarding, with the possibility of trying the same password multiple times, for each of the k-1 steps the probability of not choosing the correct password is (n-1)/n and the probablilty of choosing the correct at each step (also at the k-th one) is 1/n. <br> So the chances that the k-th try wins are given by (n-1)/n)^(k-1)*1/n .
 
 ### 10. The Dice of the Speckled Band
