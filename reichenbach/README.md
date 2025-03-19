@@ -83,6 +83,9 @@ Deduction: Argue your totals as if pitching to a wary Watson.
 
 ### 7. Solution
 
+- a. If we consider that 10M are fixed among the 4 enterprises, we remain with 10M to invest. For each million we can choose each of the 4 different options, so we have 4^10 = 1048576 different strategies.
+- b. Given the assumption that at least 3 must be backed, but onche we invest in one of the 4, we need to respect the minimum stake constraint,  we have 4 different outcomes, where al 4 are backed, the 1 with minimum stake at 1M remains uncovered, and same for the 2M, 3M and 4M. For each of this we can can reason as above and consider the minimum stakes as fixed and reason only on the other millions. We get: <br> 4^10 + 3^11 + 3^12 + 3^13 + 3^14 = 8134456 different strategies.
+
 ### 8. The Coding Conundrum of Scotland Yard
 Holmes probes a cryptography school where 100 agents study 3 courses—Java, C++, Python—under Lestrade’s watch:
 Java: 27 agents; C++: 28; Python: 20.
@@ -102,6 +105,8 @@ A spy tackles n distinct passwords, one unlocking a treaty:
 Deduction: Think like the spy—explain as if Holmes is one step ahead.
 
 ### 9. Solution
+
+- a. We need to select one among the wrong password (n - 1) out of n, with at each step reducing by one becouse we are discarding failures. so the chance that the k-th attempt succeds is given by: 
 
 ### 10. The Dice of the Speckled Band
 Holmes rolls a six-sided die six times to crack a gypsy code:
