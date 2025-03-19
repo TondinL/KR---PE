@@ -47,6 +47,12 @@ Deduction: Compute the odds as if spotting Moriarty’s bluff.
  
 ### 4. Solution
 
+The solutions of this question will be computed through the frequentist approach, where we will divide the favorable cases for the total cases. The total cases are given by all the possible hand of 5 cards from a deck of 52: <br>
+(52 choose 5) = 2598960
+- a. For computing the chances of having a flush, we can consider that there are 4 different suits, each composed of 13 different cards: <br> 4 * (13 choose 5) = 5148 <br> dividing for the total cases we get 0.00198
+- b. For computing the chances of having two pairs (aabbc), for choosing the first card of the first pair (a) there are (13 choose 1) = 13 different options. For the (b) card, the first card of the second pair we have (12 choose 1) options, becouse it needs to be different from a. Now, for choosing the two cards of both pair we have (4 choose 2) different options. The last card (c) can be any card of the remaining 52 - 8 = 44 so we get the c card different from a or b. We also need to divide this for 2!, becouse we are overcounting the cases where we choose for example K for a and J for b and the vice versa, J for a and K for b. <br> 13 * 12 * (4 choose 2) * (4 choose 2) * 44 * 1/2 = 123552 <br>  dividing for the total cases we get 0.04754.
+- c. To calculate the chances of having four of a kind (aaaab), we need to consider that there are 13 different possible pokers in the deck, one for each different card (without taking in consideration the last card). Once we choose one of the 13 cards we need to select all 4 of the different suits of that card, (13 choose 1) * (4 choose 4). For the b card we have 48 different options. <br> 13 * 48 = 624 <br> dividing for the total cases we get 0.00024
+
 ### 5. The Binary Telegram of Baskerville
 A telegraph sends M 0’s and N 1’s in random order. What’s the chance the first r bits hold exactly k 1’s, as if decoding a hound’s howl?
 Deduction: Reason through the static as if time is running out.
