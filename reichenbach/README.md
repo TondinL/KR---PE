@@ -32,6 +32,19 @@ Deduction: Track its steps as if hunting it across the moors.
 
 ### 3. Solution
 
+* *disegnino* *
+- a. deve fare per forza (n-1) passi a destra e (m-1) passi verso il basso. ora bisogna solo trovare tutte le combinazioni di essi, quindi tutti i percorsi possibili. Il totale di passi da eseguire sarà (n-1) + (m-1) = n + m - 2 . Se consideriamo ogni passo come elemento distinto ci sarebbero (n + m - 2) combinazioni possibili, ma i passi verso destra e verso il basso sono indistinguibili, quindi bisogna dividere per le ripetizioni : (n + m - 2)! / (n - 1)! * (m - 1)! , che è la stessa formula che si ottiene considerando il coefficiente binomiale ( ( n + m - 2) (n - 1) ) = ( ( n + m - 2) (m - 1) )
+- b. il vincolo può essere interpretato come se il cosetto partisse dalla cella (1,2) e ragionare allo stesso modo di prima con (n - 2) passi a dx e (m - 1) passi verso il basso. ....
+- c.
+
+### 4. The Poker Game at Reichenbach
+Holmes faces Moriarty at a poker table, where all 5-card hands from a 52-card deck are equally likely:
+- a. What’s the chance of a flush (all same suit), including straight flushes?
+- b. What’s the chance of two pairs (a, a, b, b, c, distinct values)?
+- c. What’s the chance of four of a kind (a, a, a, a, b, distinct)?
+Deduction: Compute the odds as if spotting Moriarty’s bluff.
+ 
+### 4. Solution
 
 
 
