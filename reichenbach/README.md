@@ -32,9 +32,9 @@ Deduction: Track its steps as if hunting it across the moors.
 ### 3. Solution
 
 ![m = 5 , n = 4](https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/photo_2025-03-19_12-34-06.jpg)
-this is an example with m = 5 and n = 4
+<br> this is an example with m = 5 and n = 4
 - a. As it can be seen from the above image, starting from the (1,1) cell , given the constraints, the mechanical hound is required to take  (n - 1) steps on the right (Rs) and (m -1) steps downward (Ds) to get to the (n,m) cell of the grid. So a total of (n + m -2) steps will be required for each possible trail, from which we need to understand where to put the Right steps and the downward ones. We can obtain the final result of all the possible trails by considering all the steps as distinct, taking the permutation of them and then dividing by the repetitions (Ds and Rs) <br> (n + m - 2)! / ((n - 1)! * (m - 1)!) <br> this is the same as ((n + m - 2) choose (n - 1)) = ((n + m - 2) choose (m -1)) <br> for the example given above of n = 4 and m = 5 , this gives us 35 different tails.
-- b. il vincolo può essere interpretato come se il cosetto partisse dalla cella (1,2) e ragionare allo stesso modo di prima con (n - 2) passi a dx e (m - 1) passi verso il basso. ....
+- b. Given that the first step must always be on the rigt, We can intepret the constraint as if the hound starts from the (1,2) cell, and count the possible trails from there. In this way, reasoning as in point a, there will be needed (n - 2) steps on the right and (m - 1) steps downwards, with a total of (n + m - 3) steps. <br> the solution in given by the formula ((n + m - 3) choose (n - 2)) = ((n + m - 3) choose (m - 1)) ) <br> for the example given above of n = 4 and m = 5 , this gives us 15 different tails.
 - c.
 
 ### 4. The Poker Game at Reichenbach
