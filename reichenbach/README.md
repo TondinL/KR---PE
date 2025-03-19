@@ -141,6 +141,6 @@ Deduction: Model the scatter as if piecing together a broken photograph.
 
 The probability for a clue to be hashed to the first bucket is 1/N, so the probability that k clues finish in it is given by (1/N)^k. We need also that the other m-k do not finish in the first bucket, this is given by (1 -1/N)^(m-k) . We need also to multiply for (m choose k) for all the different arrangements of the k clues in the all the m clues. the final formula is given by 
 
-<img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/es_11.jpg" width="400"/>
+<img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/es_12.jpg" width="400"/>
 
 ### Additional Comments:
