@@ -66,7 +66,8 @@ Deduction: Justify your counts as if tracing Moriarty’s twisted logic.
 ### 6. Solution
 
 - a. Moriarty has to choose 3 birds out of 8 and 3 reptile out of 6 to display. it means that he can craft (8 choose 3) * (6 choose 3) = 1120 different exhibits.
-- b. For computing the new constraint, we can start from the previous result (total possible exhubuts) and subtract the illegal ones. <br> The illegal exhibits can be computed fixing the 2 birds that can not coexist together and computing all the possible combination with this two fixed. this can be obtained by: <br> (6 choose 1) * (6 choose 3) <br> the final formula is: <br> (8 choose 3) * (6 choose 3) -  (6 choose 1) * (6 choose 3)
+- b. For computing the new constraint, we can start from the previous result (total possible exhubuts) and subtract the illegal ones. <br> The illegal exhibits can be computed fixing the 2 birds that can not coexist together and computing all the possible combination with this two fixed. this can be obtained by: <br> (6 choose 1) * (6 choose 3) <br> the final formula is: <br> (8 choose 3) * (6 choose 3) -  (6 choose 1) * (6 choose 3) = 1000
+- c. For this point we can reason as for point b, subtracting the illegal exhibits. In this case the illegal exhibits are given by <br> (7 choose 2) * (5 choose 2) <br> obtained fixing the 2 animals that can not coexist together. The final formula is: <br>  (8 choose 3) * (6 choose 3) -  (7 choose 2) * (5 choose 2) = 910
 
 ### 7. The Investments of Baker Street
 Holmes secures £20 million to fund 4 shadowy enterprises, investing in £1 million units, each with a minimum stake: £1M, £2M, £3M, £4M.
