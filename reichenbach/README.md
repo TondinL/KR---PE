@@ -11,7 +11,7 @@ Deduction: Explain your reasoning as if briefing Watson on the club’s hidden h
 
 ### 1. Solution
 
-- a.  There are 10 different options for the first seat, 9 for the second, 8 for the third, and so on until the last seat where there is only one option left. The solution is given by the permutation rule of n (n = 10) distinct objects
+- a.  There are 10 different options for the first seat, 9 for the second, 8 for the third, and so on until the last seat where there is only one option left. The solution is given by the permutation rule of n (n = 10) distinct objects <br> 10! = 10 * 9 * 8 * ... * 1
 - b. We can consider i due signori legati da vincolo come un elemento unico, quindi ragionando come sopra 9!. Bisogna però considerare il caso in cui signore A siede a destra e signore B a sinistra e viceversa, ci sono 9! arrangement nel caso 1 e 9! arrengement nel caso 2 -> 2 * 9! <br>
 - c. L'unico modo per rispettare il constraint dato è fare in modo che i due gruppi si siedano uno si e uno no. Ora considerando i due gruppi distinti, per oguno ci sono 5! arrangement. quindi 5! * 5! (per ogni arrangment del gruppo 1 ci sono 5! arangement del gruppo 2, per questo moltiplicazione) Bisogna considerare ora il caso in cui si inizia con un elemento del gruppo 1 o gruppo 2, quindi il tutto va moltiplicato per 2 -> 2* (5! * 5!)
 - d. ragionando come nel punto b, consideriamo ogni coppia come un elemento singolo -> 5!, ora bisogna calcolare tutti i modi in cui gli elementi della coppia si possono scambiare tra loro per formare un gruppo distinto: 2! per ogni, 5 casi indipendenti tra loro -> 2! * 2! * 2! * 2! * 2! = (2!)^5 -> 5! * (2!)^5 
