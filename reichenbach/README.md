@@ -147,4 +147,9 @@ The probability for a clue to be hashed to the first bucket is 1/N, so the proba
 
 <img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/es_12.JPG" width="400"/>
 
+2 Coding (Sherlock Holmes Edition)
+14. The Game of the Final Problem
+Holmes and Moriarty duel with a device spitting integers from 1 to 100. Holmes adds to S (from 0) until S > 100, noting his last number x. Moriarty resumes, adding until S > 200, noting y. The higher wins. Simulate 100,000 rounds in Python 3 and estimate Moriarty’s victory odds, as if outsmarting Holmes at Reichenbach.
+Deduction: Code as if the fate of London hangs in the balance—comment your logic.
 
+- after multiple runs, each with 100,000 rounds, the probability of Moriarty's victory is around 0.52
