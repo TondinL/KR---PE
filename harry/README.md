@@ -10,4 +10,4 @@ train’s true distance? (You can leave a constant and don’t need to
 simplify).
 
 ## Solution 1
-- a. Our belief about the distance D before the reading is given, as stated in the problem, by  D ∼ N(µ = 98, σ^2 = 16). <br> we know that the PDF of RV that follows a Normal distribution is given by: <br>  <img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/photo_2025-03-19_12-34-06.jpg" width="400"/> <br> sobstituting the values µ = 98, σ^2 = 16 we obtain the following distribution : <br> <img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/reichenbach/Images/photo_2025-03-19_12-34-06.jpg" width="400"/> <br>
+- a. Our belief about the distance D before the reading is given, as stated in the problem, by  D ∼ N(µ = 98, σ^2 = 16). <br> we know that the PDF of RV that follows a Normal distribution is given by: <br>  <img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/harry/images/es_1a1.png" width="400"/> <br> sobstituting the values µ = 98, σ^2 = 16 we obtain the following distribution : <br> <img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/harry/images/es_1a2.png" width="400"/> <br>
