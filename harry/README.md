@@ -14,6 +14,7 @@ simplify).
 ## Solution 1
 - a. Our belief about the distance D before the reading is given, as stated in the problem, by  D ∼ N(µ = 98, σ^2 = 16). <br> we know that the PDF of RV that follows a Normal distribution is given by: <br> <br> <img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/harry/images/es_1a1.png" width="160"/> <br> sobstituting the values µ = 98, σ^2 = 16 we obtain the following distribution : <br> <br> <img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/harry/images/es_1a2.png" width="400"/> <br>
 - b. Since the instrument's noise follows N(0,4), the reading R given true distance t is distributed as N(t,4). We are looking to find P(R = 100|t). Sobstituting the values µ = t, σ^2 = 4 and x = 100 we get: <br> <br> <img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/harry/images/es_1b1.png" width="270"/>
+- c. 
 
 ## n.2
 2. On average, 5.5 owls arrive at the Owlery per minute. What is the probability that:
@@ -58,3 +59,6 @@ having cumulative distribution function F is the value m such that F(m) =
 - b. X ∼ N(µ, σ2) (Normal distribution, like scores on the O.W.L.s).
 
 ## solution 3
+
+- a. given that  X ∼ Uni(a, b), we know that the PDF is f(x) = 1/(b-a) when a =< x =< b and 0 otherwise. We also know the CDF of the uniform distribution, F(x) = 0 for x < a , F(x) = (x-a)/(b-a) for a =< x =< b, and F(x) = 1 for x > b. We are looking for m such that F(m) = 5; <br> (m-a)/(b-a) = 0.5 <br> m-a = (b-a)/2 <br> m = a + (b-a)/2 = (b+a)/2 , this is equal to the mean of the distribution, m = µ .
+- b. in a normal distribution, X ∼ N(µ, σ2), the mean and the median are equal (same for the uniform distribution),<br> m = µ,<br> this is given from the simmetry of the distribution with respect to its center ( µ ).
