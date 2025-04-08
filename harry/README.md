@@ -86,3 +86,7 @@ in at least 2 of the next 3 weeks?
 - a. Let A = X + Y . What is the distribution of the combined power A?
 - b. Let B = 5X + 2. What is the distribution of B (perhaps after a powerenhancing charm)?
 - c. Let C = aX − bY + c2Z, where a, b, and c are real-valued constants representing spell modifiers. What is the distribution (and parameters) for C? Show how you derived your answer.
+
+## Solution 5
+- a. Since the sum of independent normal random variables is also normally distributed, the combined variable
+A = X + Y follows a normal distribution. This is a well-known property of the normal distribution.<br> *From the CS109 Course Book [Piech's textbook](https://chrispiech.github.io/probabilityForComputerScientists/en/)* <br> 
