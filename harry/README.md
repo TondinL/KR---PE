@@ -73,4 +73,4 @@ in at least 2 of the next 3 weeks?
 
 # Solution 4
 
-- a. The total number of visitors in the next two weeks is the sum of two independent random variables X1 and X2 <br> S = X1 + X2 <br> Since X1 and X2 are both normally distributed, their sum S will also be normally distributed, with µs = µ1 + µ2 and σ<sup>2</sup><sub>s</sub> = 
+- a. The total number of visitors in the next two weeks is the sum of two independent random variables X1 and X2 <br> S = X1 + X2 <br> Since X1 and X2 are both normally distributed, their sum S will also be normally distributed, with µ<sub>s</sub> = µ<sub>x1</sub> + µ<sub>x2</sub> and σ<sup>2</sup><sub>s</sub> = σ<sup>2</sup><sub>x1</sub> + σ<sup>2</sup><sub>x2</sub>
