@@ -71,8 +71,18 @@ two weeks exceeds 5000?
 - b. What is the probability that the weekly number of visitors exceeds 2000
 in at least 2 of the next 3 weeks?
 
-# Solution 4
+## Solution 4
 
-- a. The total number of visitors in the next two weeks is the sum of two independent random variables X1 and X2 <br> S = X1 + X2 <br> Since X1 and X2 are both normally distributed, their sum S will also be normally distributed, with µ<sub>s</sub> = µ<sub>X1</sub> + µ<sub>X2</sub> = 4400 and σ<sup>2</sup><sub>s</sub> = σ<sup>2</sup><sub>X1</sub> + σ<sup>2</sup><sub>X2</sub> = 105800 <br> S ∼ N(4400, 105800) <br> Given that there is no closed form for the integral of the Normal PDF, and as such there is no closed form CDF, we will use the precomputed function Ω that represents that CDF of the Standard Normal. For this we will need to find a linear transform from S to the standard normal Z ∼ N(0,1). <br> This standardization is given by Z = (x -  µ<sub>s</sub>)/σ<sub>S</sub> = (x - 4400)/325 <br> P(x > 5000) = P(Z > (5000 - 4400) / 325) = P(Z > 600 / 325) = P(Z > 1.846) <br> To compute P(Z > 1.846) we use the standard normal distribution table <br> [Standard Normal Distribution Table - University of Arizona](https://math.arizona.edu/~rsims/ma464/standardnormaltable.pdf)
-<br> given that  P(Z > 1.846) = 1 -  P(Z =< 1.846). <br> 1 − 0.967 = 0.033
-- b.
+- a. The total number of visitors in the next two weeks is the sum of two independent random variables X1 and X2 <br> S = X1 + X2 <br> Since X1 and X2 are both normally distributed, their sum S will also be normally distributed, with µ<sub>s</sub> = µ<sub>X1</sub> + µ<sub>X2</sub> = 4400 and σ<sup>2</sup><sub>s</sub> = σ<sup>2</sup><sub>X1</sub> + σ<sup>2</sup><sub>X2</sub> = 105800 <br> S ∼ N(4400, 105800) <br> Given that there is no closed form for the integral of the Normal PDF, and as such there is no closed form CDF, we will use the precomputed function Ω that represents that CDF of the Standard Normal. For this we will need to find a linear transform from S to the standard normal Z ∼ N(0,1). <br> This standardization is given by Z = (x - µ<sub>s</sub>)/σ<sub>S</sub> = (x - 4400)/325 <br> P(x > 5000) = P(Z > (5000 - 4400) / 325) = P(Z > 600 / 325) = P(Z > 1.846) <br> To compute P(Z > 1.846) we use the standard normal distribution table: <br> [Standard Normal Distribution Table - University of Arizona](https://math.arizona.edu/~rsims/ma464/standardnormaltable.pdf)
+<br> Given that  P(Z > 1.846) = 1 -  P(Z =< 1.846). <br> 1 − 0.967 = 0.033 . Thats the probability that the total number of visitors in the next two weeks exceeds 5000.
+- b. For resolving this problem we will proced in two steps. Initialy we need to compute the probability that the number of visitors exceeds 2000 in one week. Then, given the fact that each week is indipendent from the other we will modell the problem as a binomial random variable with p equal to the probability computed in the first step. <br> For the firts step we will proceed in the same way as in the point a. We need to normalize the distribution and then use the precomputed function Ω that represents that CDF of the Standard Normal. <br> Here Z =  (x - µ<sub>s</sub>)/σ<sub>S</sub> = (x - 2200)/230 <br> P(x > 2000) = P(Z > (2000 - 2200) / 230) = P(Z > -0.87) <br> To compute P(Z > -0.87) we use the standard normal distribution table : <br> 1 - 0.192 = 0.808 <br> So the probability that in one week visitors exceeds 2000 is 0.808. <br> Now we model the problem as a Binomial random variable X ~ Bin(n,p) with p = 0.808 and n = 3. We need to compute P(X => 2) = P(X = 2) + P(X = 3). <br> Using the formula of the binomial P(X = k) = (3 choose k)p<sup>k</sup>(1-p)<sup>3-k</sup> <br>
+- P(X = 2) = (3 choose 2) · (0.808)<sup>2</sup> · (1 - 0.808)<sup>1</sup> = 3 · 0.653 · 0.192 ≈ 0.376
+- P(X = 3) = (3 choose 3) · (0.808)<sup>3</sup> = 1 · 0.527 ≈ 0.527
+- P(X ≥ 2) = P(X = 2) + P(X = 3) = 0.376 + 0.527 = 0.903
+
+
+## n.5
+5. Let X, Y , and Z be independent random variables representing the magical power levels of three Hogwarts students, where X ∼ N(µ1, σ1^2) (Gryffindor), Y ∼ N(µ2, σ2^2) (Hufflepuff), and Z ∼ N(µ3, σ3^2) (Ravenclaw).
+- a. Let A = X + Y . What is the distribution of the combined power A?
+- b. Let B = 5X + 2. What is the distribution of B (perhaps after a powerenhancing charm)?
+- c. Let C = aX − bY + c2Z, where a, b, and c are real-valued constants representing spell modifiers. What is the distribution (and parameters) for C? Show how you derived your answer.
