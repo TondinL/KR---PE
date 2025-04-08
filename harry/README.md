@@ -73,15 +73,6 @@ in at least 2 of the next 3 weeks?
 
 # Solution 4
 
-- a. The total number of visitors in the next two weeks is the sum of two independent random variables X1 and X2 <br> S = X1 + X2 <br> Since X1 and X2 are both normally distributed, their sum S will also be normally distributed, with µ<sub>s</sub> = µ<sub>X1</sub> + µ<sub>X2</sub> = 4400 and σ<sup>2</sup><sub>s</sub> = σ<sup>2</sup><sub>X1</sub> + σ<sup>2</sup><sub>X2</sub> = 105800 <br> S ∼ N(4400, 105800) <br> Given that there is no closed form for the integral of the Normal PDF, and as such there is no closed form CDF, we will use the precomputed function Ω that represents that CDF of the Standard Normal. For this we will need to find a linear transform from S to the standard normal Z ∼ N(0,1). <br> This standardization is given by Z = (x -  µ<sub>s</sub>)/σ<sub>S</sub> = (x - 4400)/325 <br> - a. The total number of visitors in the next two weeks is the sum of two independent random variables \( X_1 \) and \( X_2 \)  
-  \( S = X_1 + X_2 \)  
-  Since \( X_1 \) and \( X_2 \) are both normally distributed, their sum \( S \) will also be normally distributed, with  
-  \( \mu_S = \mu_{X_1} + \mu_{X_2} = 4400 \) and \( \sigma_S^2 = \sigma_{X_1}^2 + \sigma_{X_2}^2 = 105800 \)  
-  \( S \sim \mathcal{N}(4400, 105800) \)  
-  Given that there is no closed form for the integral of the Normal PDF, and as such there is no closed form CDF, we will use the precomputed function \( \Omega \) that represents the CDF of the Standard Normal. For this, we will need to find a linear transform from \( S \) to the standard normal \( Z \sim \mathcal{N}(0,1) \).  
-  This standardization is given by:  
-  \[
-  Z = \frac{S - \mu_S}{\sigma_S} = \frac{S - 4400}{325}
-  \]
-
-
+- a. The total number of visitors in the next two weeks is the sum of two independent random variables X1 and X2 <br> S = X1 + X2 <br> Since X1 and X2 are both normally distributed, their sum S will also be normally distributed, with µ<sub>s</sub> = µ<sub>X1</sub> + µ<sub>X2</sub> = 4400 and σ<sup>2</sup><sub>s</sub> = σ<sup>2</sup><sub>X1</sub> + σ<sup>2</sup><sub>X2</sub> = 105800 <br> S ∼ N(4400, 105800) <br> Given that there is no closed form for the integral of the Normal PDF, and as such there is no closed form CDF, we will use the precomputed function Ω that represents that CDF of the Standard Normal. For this we will need to find a linear transform from S to the standard normal Z ∼ N(0,1). <br> This standardization is given by Z = (x -  µ<sub>s</sub>)/σ<sub>S</sub> = (x - 4400)/325 <br> P(x > 5000) = P(Z > (5000 - 4400) / 325) = P(Z > 600 / 325) = P(Z > 1.846) <br> To compute P(Z > 1.846) we use the standard normal distribution table <br> [Standard Normal Distribution Table - University of Arizona](https://math.arizona.edu/~rsims/ma464/standardnormaltable.pdf)
+<br> given that  P(Z > 1.846) = 1 -  P(Z =< 1.846). <br> 1 − 0.967 = 0.033
+- b.
