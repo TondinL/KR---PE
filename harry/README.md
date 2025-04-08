@@ -23,47 +23,38 @@ simplify).
 
 ## Solution 2
 
-For resolving this problem we can parametrize it with the Poisson distribution, where the Poisson random variable (discrete) gives the probability of a given number of events in a fixed interval, given the fact that we know the constant mean rate, in our case 5.5 owls per minute ( 11 for the case of two minutes and 16.5 for the case of three). For solving the computation of the probabiliy for the three points of the problem, i used the function poisson.cdf from the SciPy library.
-
-
-## Owl Arrival Probability Analysis
-
-To resolve this problem, we model it using the **Poisson distribution**. The Poisson distribution is used to estimate the probability of a given number of discrete events occurring in a fixed time interval, assuming we know the constant mean rate.
-
-In our case, the mean arrival rate is 5.5 owls per minute. Therefore:
-- For 1 minute: λ = 5.5  
-- For 2 minutes: λ = 11  
-- For 3 minutes: λ = 16.5  
-
-To compute the probabilities for the three parts of the problem, we use the `poisson.cdf` function from the **SciPy** library, which returns the cumulative distribution function (CDF):
-
-\[
-P(X \leq k) = \sum_{i=0}^{k} \frac{e^{-\lambda} \cdot \lambda^i}{i!}
-\]
-
-Since the question asks for the probability that **more than** a certain number of owls arrive, we compute:
-
-\[
-P(X > k) = 1 - P(X \leq k)
-\]
-
-Here is the Python code used:
+For resolving this problem we can parametrize it with the Poisson distribution, where the Poisson random variable (discrete) gives the probability of a given number of events in a fixed interval, given the fact that we know the constant mean rate, in our case 5.5 owls per minute ( 11 for the case of two minutes and 16.5 for the case of three). For solving the computation of the probabiliy for the three points of the problem, i used the function poisson.cdf from the SciPy library. With the CDF F(x) we can calculate the cumulative probability  that a random variable takes on a value less than a number, so we will compute 1 - F(x) ,given the fact that we are computing the probability that it takes on a value greather than a number. The poisson.cdf function takes two parameters (integers), the number we computing the probability for and the lambda ( the constant mean rate ) of the distribution.
 
 ```python
 from scipy.stats import poisson
 
-# a. More than 7 owls in 1 minute (λ = 5.5)
+
 lambda_1 = 5.5
 P_a = 1 - poisson.cdf(7, lambda_1)
 
-# b. More than 13 owls in 2 minutes (λ = 11)
-lambda_2 = 11
+
+lambda_2 = lambda_1*2
 P_b = 1 - poisson.cdf(13, lambda_2)
 
-# c. More than 15 owls in 3 minutes (λ = 16.5)
-lambda_3 = 16.5
+
+lambda_3 = lambda_1*3
 P_c = 1 - poisson.cdf(15, lambda_3)
 
 print("a. P(X > 7) =", round(P_a, 3))
 print("b. P(X > 13) =", round(P_b, 3))
 print("c. P(X > 15) =", round(P_c, 3))
+```
+The output is :
+
+- a. P(X > 7) = 0.191
+- b. P(X > 13) = 0.219
+- c. P(X > 15) = 0.582
+
+## n.3
+3. The median of a continuous random variable (like the height of a gnome)
+having cumulative distribution function F is the value m such that F(m) =
+0.5. Find the median of X (in terms of distribution parameters) if:
+- a. X ∼ Uni(a, b) (Uniform distribution, like the spread of Floo powder).
+- b. X ∼ N(µ, σ2) (Normal distribution, like scores on the O.W.L.s).
+
+## solution 3
