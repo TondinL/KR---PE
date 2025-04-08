@@ -58,7 +58,19 @@ having cumulative distribution function F is the value m such that F(m) =
 - a. X ∼ Uni(a, b) (Uniform distribution, like the spread of Floo powder).
 - b. X ∼ N(µ, σ2) (Normal distribution, like scores on the O.W.L.s).
 
-## solution 3
+## Solution 3
 
 - a. given that  X ∼ Uni(a, b), we know that the PDF is f(x) = 1/(b-a) when a =< x =< b and 0 otherwise. We also know the CDF of the uniform distribution, F(x) = 0 for x < a , F(x) = (x-a)/(b-a) for a =< x =< b, and F(x) = 1 for x > b. We are looking for m such that F(m) = 5; <br> (m-a)/(b-a) = 0.5 <br> m-a = (b-a)/2 <br> m = a + (b-a)/2 = (b+a)/2 , this is equal to the mean of the distribution, m = µ .
-- b. in a normal distribution, X ∼ N(µ, σ2), the mean and the median are equal (same for the uniform distribution),<br> m = µ,<br> this is given from the simmetry of the distribution with respect to its center ( µ ).
+- b. in a normal distribution, X ∼ N(µ, σ^2), the mean and the median are equal (same for the uniform distribution),<br> m = µ,<br> this is given from the simmetry of the distribution with respect to its center ( µ ).
+
+## n.4
+4. Let Xi be the number of students visiting the Hogwarts library in week i,
+where Xi ∼ N(2200, 52900). Assume weekly visits Xi are independent.
+- a. What is the probability that the total number of visitors in the next
+two weeks exceeds 5000?
+- b. What is the probability that the weekly number of visitors exceeds 2000
+in at least 2 of the next 3 weeks?
+
+# Solution 4
+
+- a. The total number of visitors in the next two weeks is the sum of two independent random variables X1 and X2 <br> S = X1 + X2 <br> Since X1 and X2 are both normally distributed, their sum S will also be normally distributed, with µs = µ1 + µ2 and σ<sup>2</sup><sub>s</sub> = 
