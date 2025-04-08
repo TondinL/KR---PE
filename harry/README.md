@@ -89,4 +89,9 @@ in at least 2 of the next 3 weeks?
 
 ## Solution 5
 - a. Since the sum of independent normal random variables is also normally distributed, the combined variable
-A = X + Y follows a normal distribution with µ<sub>A</sub> = µ<sub>X</sub> + µ<sub>X</sub> and σ<sup>2</sup><sub>A</sub> = σ<sup>2</sup><sub>X</sub> + σ<sup>2</sup><sub>Y</sub>. This is a well-known property of the normal distribution.<br> *[From the CS109 Coursebook](https://chrispiech.github.io/probabilityForComputerScientists/en/)* <br> 
+A = X + Y follows a normal distribution with µ<sub>A</sub> = µ<sub>X</sub> + µ<sub>Y</sub> and σ<sup>2</sup><sub>A</sub> = σ<sup>2</sup><sub>X</sub> + σ<sup>2</sup><sub>Y</sub>. This is a well-known property of the normal distribution.<br> *[From the CS109 Coursebook](https://chrispiech.github.io/probabilityForComputerScientists/en/)* <br> 
+So the distribution is A ~ N(µ<sub>X</sub> + µ<sub>Y</sub>, σ<sup>2</sup><sub>X</sub> + σ<sup>2</sup><sub>Y</sub>).
+- b. If X is a Normal such that X ~ N(µ, σ<sup>2</sup>) and Y is a linear trasform of X such that Y = aX + b then Y is also a Normal where: <br> Y ~ N(aµ + b, a<sup>2</sup>σ<sup>2</sup>). <br> In our case B ~ N(5µ + 2, 25σ<sup>2</sup>).
+- c. Given the proprieties used in point a and b, becouse the variables are independent:
+-  µ<sub>C</sub> = aµ<sub>X</sub> - bµ<sub>Y</sub> + c<sup>2</sup>µ<sub>A</sub>
+- σ<sup>2</sup><sub>C</sub> = a<sup>2</sup>σ<sup>2</sup><sub>X</sub> - b<sup>2</sup>σ<sup>2</sup><sub>Y</sub> + c<sup>4</sup>σ<sup>2</sup><sub>Z</sub>
