@@ -89,4 +89,4 @@ in at least 2 of the next 3 weeks?
 
 ## Solution 5
 - a. Since the sum of independent normal random variables is also normally distributed, the combined variable
-A = X + Y follows a normal distribution. This is a well-known property of the normal distribution.<br> *From the CS109 Course Book [Piech's textbook](https://chrispiech.github.io/probabilityForComputerScientists/en/)* <br> 
+A = X + Y follows a normal distribution with µ<sub>A</sub> = µ<sub>X</sub> + µ<sub>X</sub> and σ<sup>2</sup><sub>A</sub> = σ<sup>2</sup><sub>X</sub> + σ<sup>2</sup><sub>Y</sub>. This is a well-known property of the normal distribution.<br> *[From the CS109 Coursebook](https://chrispiech.github.io/probabilityForComputerScientists/en/)* <br> 
