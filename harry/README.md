@@ -123,3 +123,10 @@ of i and j.
 - c. Are X and Y independent? Explain.
 
 ## Solution 7
+
+- a. X and Y are discrete random variables, we want to compute the PMF P(x,y), with P(X = x) = 1/6 (uniform over {1, ... ,6} and P(Y = y|X = x) = 1/x if 1 =< y =< x and 0 otherwise. We can compute the joint probability P(x and y) with the product rule P(x,y) = P(x)*P(y|x) = 1/6x if 1 =< y =< x =< 6 and 0 otherwise.
+- P(X = j | Y = i) = 
+  {
+    1 / j &div; (&#8721;<sub>k=i</sub><sup>6</sup> 1 / k),  if j &ge; i  
+    0, otherwise
+  }
