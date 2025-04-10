@@ -106,6 +106,8 @@ where 0 < y < x < 1.
 
 ## Solution 6
 
+- a. <br> src="https://raw.githubusercontent.com/TondinL/KR---PE/main/harry/images/es_6a.png" width="160"/> <br> 
+
 ## n.7
 
 7. Choose a number X at random from the set of house points {1, 2, 3, 4, 5, 6}
