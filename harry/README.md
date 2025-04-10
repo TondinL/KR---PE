@@ -106,7 +106,7 @@ where 0 < y < x < 1.
 
 ## Solution 6
 
-- a. <br> src="https://raw.githubusercontent.com/TondinL/KR---PE/main/harry/images/es_6a.png" width="160"/> <br> 
+- a. <br> src="https://raw.githubusercontent.com/TondinL/KR---PE/main/harry/images/es_6a.png" width="200"/> <br> 
 
 ## n.7
 
