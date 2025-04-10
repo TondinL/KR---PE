@@ -107,7 +107,10 @@ where 0 < y < x < 1.
 ## Solution 6
 
 - a. <br> <br> <img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/harry/images/es_6a.png" width="400"/> <br>
-- b. 
+- b. Intuitively we can see that the costraint about the domain y < x imposes a dendence; once you  know the value of x, the value of y must be less than. Further more, two discrete random variables X and Y are called indipendent if f<sub>X,Y</sub>(x,y) = f<sub>X</sub>(x)*f<sub>Y</sub>(y), and from the point c and d where sono rappresentati i marginali di X e Y we see that the joint density function can not be factored in f<sub>X</sub>(x)*f<sub>Y</sub>(y)
+- c. for computing the marginal density function of X, we need to integrate the joint density function over y, obtaining 2x , 0 < x < 1
+- same as in the last point but we need to integrate over x, to obtain the marginal density function of y, wich is -4yln(y) ,  0 < y < 1
+
 ## n.7
 
 7. Choose a number X at random from the set of house points {1, 2, 3, 4, 5, 6}
