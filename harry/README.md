@@ -92,6 +92,29 @@ in at least 2 of the next 3 weeks?
 A = X + Y follows a normal distribution with µ<sub>A</sub> = µ<sub>X</sub> + µ<sub>Y</sub> and σ<sup>2</sup><sub>A</sub> = σ<sup>2</sup><sub>X</sub> + σ<sup>2</sup><sub>Y</sub>. This is a well-known property of the normal distribution.<br> *[From the CS109 Coursebook](https://chrispiech.github.io/probabilityForComputerScientists/en/)* <br> 
 So the distribution is A ~ N(µ<sub>X</sub> + µ<sub>Y</sub>, σ<sup>2</sup><sub>X</sub> + σ<sup>2</sup><sub>Y</sub>).
 - b. If X is a Normal such that X ~ N(µ, σ<sup>2</sup>) and Y is a linear trasform of X such that Y = aX + b then Y is also a Normal where: <br> Y ~ N(aµ + b, a<sup>2</sup>σ<sup>2</sup>). <br> In our case B ~ N(5µ + 2, 25σ<sup>2</sup>).
-- c. Given the proprieties used in point a and b, becouse the variables are independent:
--  µ<sub>C</sub> = aµ<sub>X</sub> - bµ<sub>Y</sub> + c<sup>2</sup>µ<sub>A</sub>
-- σ<sup>2</sup><sub>C</sub> = a<sup>2</sup>σ<sup>2</sup><sub>X</sub> - b<sup>2</sup>σ<sup>2</sup><sub>Y</sub> + c<sup>4</sup>σ<sup>2</sup><sub>Z</sub>
+- c. Given the proprieties used in point a and b, becouse the variables are independent: <br> µ<sub>C</sub> = aµ<sub>X</sub> - bµ<sub>Y</sub> + c<sup>2</sup>µ<sub>A</sub> <br> σ<sup>2</sup><sub>C</sub> = a<sup>2</sup>σ<sup>2</sup><sub>X</sub> - b<sup>2</sup>σ<sup>2</sup><sub>Y</sub> + c<sup>4</sup>σ<sup>2</sup><sub>Z</sub>
+
+## n.6
+
+6. The joint probability density function of continuous random variables X
+(skill in Potions) and Y (skill in Charms) is given by fX,Y (x, y) = c y/x
+where 0 < y < x < 1.
+- a. What is the value of c for this to be a valid probability density function?
+- b. Are Potion skill (X) and Charm skill (Y) independent? Explain.
+- c. What is the marginal density function of X?
+- d. What is the marginal density function of Y?
+
+## Solution 6
+
+## n.7
+
+7. Choose a number X at random from the set of house points {1, 2, 3, 4, 5, 6}
+awarded by Professor McGonagall. Now choose a number Y at random
+from the subset of points no larger than X, {1, . . . , X}.
+- a. Determine the joint probability mass function of X (initial points) and
+Y (second random selection).
+- b. Determine the conditional mass function P(X = j|Y = i) as a function
+of i and j.
+- c. Are X and Y independent? Explain.
+
+## Solution 7
