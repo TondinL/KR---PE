@@ -107,7 +107,7 @@ where 0 < y < x < 1.
 ## Solution 6
 
 - a. <br> <br> <img src="https://raw.githubusercontent.com/TondinL/KR---PE/main/harry/images/es_6a.png" width="400"/> <br>
-- b. Intuitively we can see that the costraint about the domain y < x imposes a dendence; once you  know the value of x, the value of y must be less than. Further more, two discrete random variables X and Y are called indipendent if f<sub>X,Y</sub>(x,y) = f<sub>X</sub>(x)*f<sub>Y</sub>(y), and from the point c and d where sono rappresentati i marginali di X e Y we see that the joint density function can not be factored in f<sub>X</sub>(x)*f<sub>Y</sub>(y)
+- b. Intuitively we can see that the costraint about the domain y < x imposes a dependence; once you  know the value of x, the value of y must be less than the value imposed by x. Further more, two discrete random variables X and Y are called indipendent if f<sub>X,Y</sub>(x,y) = f<sub>X</sub>(x)*f<sub>Y</sub>(y), and from the point c and d where sono rappresentati i marginali di X e Y we see that the joint density function can not be factored in f<sub>X</sub>(x)*f<sub>Y</sub>(y)
 - c. for computing the marginal density function of X, we need to integrate the joint density function over y, obtaining 2x , 0 < x < 1
 - same as in the last point but we need to integrate over x, to obtain the marginal density function of y, wich is -4yln(y) ,  0 < y < 1
 
@@ -127,7 +127,6 @@ of i and j.
 - a. X and Y are discrete random variables, we want to compute the PMF P(x,y), with P(X = x) = 1/6 (uniform over {1, ... ,6} and P(Y = y|X = x) = 1/x if 1 =< y =< x and 0 otherwise. We can compute the joint probability P(x and y) with the product rule P(x,y) = P(x)*P(y|x) = 1/6x if 1 =< y =< x =< 6 and 0 otherwise.
 - b. To determine the conditional mass function P(X = j|Y = i) we will use the Bayes Theorem <br> P(X = j | Y = i) = P(X = j, Y = i) / P(Y = i) <br> We already know the joint probability mass function <br> P(X = j, Y = i) = 1 / (6j), &nbsp;&nbsp; se i ≤ j ≤ 6 <br> We need to compute the marginal mass function P(Y = i) to determine the conditional mass function <br> P(Y = i) = Σ<sub>k=i</sub><sup>6</sup> (1 / (6k))
  <br> So the conditional, expressed as a function of i and j becomes: <br> P(X = j | Y = i) = (1 / j) / Σ<sub>k=i</sub><sup>6</sup> (1 / k), &nbsp;&nbsp; se j ≥ i <br> P(X = j | Y = i) = 0, &nbsp;&nbsp; se j &lt; i
-- c. 
-
+- c. We will determine the indipendece of the two variables checking if the joint probability mass function factorizes into the product of their marginal PMFs <br> f<sub>X,Y</sub>(x,y) = f<sub>X</sub>(x)*f<sub>Y</sub>(y) <br> We know that since X is chosen uniformly from {1,2,3,4,5,6} we have P(X = x) = 1/6 <br> From point b we know that the marginal mass function P(Y = i) is <br> P(Y = i) = Σ<sub>k=i</sub><sup>6</sup> (1 / (6x)). <br> Therefore, X and Y are not independent, because the joint PMF does not factorize into the product of marginals.
 
 
