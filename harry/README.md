@@ -125,4 +125,8 @@ of i and j.
 ## Solution 7
 
 - a. X and Y are discrete random variables, we want to compute the PMF P(x,y), with P(X = x) = 1/6 (uniform over {1, ... ,6} and P(Y = y|X = x) = 1/x if 1 =< y =< x and 0 otherwise. We can compute the joint probability P(x and y) with the product rule P(x,y) = P(x)*P(y|x) = 1/6x if 1 =< y =< x =< 6 and 0 otherwise.
-- b. We 
+- b. To determine the conditional mass function P(X = j|Y = i) we will use the Bayes Theorem <br> P(X = j | Y = i) = P(X = j, Y = i) / P(Y = i) <br> We already know the joint probability mass function <br> P(X = j, Y = i) = 1 / (6j), &nbsp;&nbsp; se i ≤ j ≤ 6 <br> We need to compute the marginal mass function P(Y = i) to determine the conditional mass function <br> P(Y = i) = Σ<sub>k=i</sub><sup>6</sup> (1 / (6k))
+ <br> So the conditional, expressed as a function of i and j becomes: <br> P(X = j | Y = i) = (1 / j) / Σ<sub>k=i</sub><sup>6</sup> (1 / k), &nbsp;&nbsp; se j ≥ i <br> P(X = j | Y = i) = 0, &nbsp;&nbsp; se j &lt; i
+
+
+
