@@ -13,6 +13,13 @@ if not os.path.exists(file_path):
 
 df = pd.read_excel(file_path)
 
+def clean_prefix(text):
+    if isinstance(text, str):
+        return text.split("###")[-1].strip()
+    return text
+
+df = df.applymap(clean_prefix)
+
 def split_keywords(kw_string):
     if pd.isnull(kw_string):
         return []
